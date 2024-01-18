@@ -1,0 +1,14 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Duplicates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data" [style.background-color]="getColor(item.duplicates)">
+      <td>{{ item.name }}</td>
+      <td>{{ item.duplicates }}</td>
+    </tr>
+  </tbody>
+</table>
